@@ -1,0 +1,122 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  /* background: linear-gradient(to left, #81BFDA,#9fe9ddbd,#50ecdf); */
+}
+h1{
+    color: white;
+    text-decoration: underline;
+}
+ .container{
+    padding: 30px 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.leftContainer {
+  padding: 20px 20px;
+  border: 2px solid white;
+  background: linear-gradient(to top, rgb(129, 204, 230), rgb(79, 245, 203));
+  box-shadow: 10px 10px 25px white;
+  width: 38vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.leftContainer input {
+  outline: none;
+  border: none;
+  border-radius: 35px;
+  padding-left: 20px;
+  width: 30vw;
+  height: 8vh;
+}
+#submit {
+  border: 1px solid white;
+  background: linear-gradient(
+    to left,
+    rgb(80, 202, 243),
+    rgb(13, 253, 193)
+  );
+  color:white;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 35px;
+  width: 15vw;
+  height: 50px;
+  padding: 10px 10px;
+}
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .leftContainer{
+        width: 100%;
+    }
+    .leftContainer input {
+        width: 300px;
+        height: 50px;
+    }
+    #submit{
+        font-size: 16px;
+        width: 120px;
+        height: 40px;
+    }
+    .leftContainer{
+        /* height: 60vh; */
+        width: 60vh;
+    }
+}
+    
+  
