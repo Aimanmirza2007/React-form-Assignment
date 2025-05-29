@@ -50,10 +50,16 @@ body {
   justify-content: center;
   align-items: center;
   height: 90vh;
-  /* background: linear-gradient(to left, #81BFDA,#9fe9ddbd,#50ecdf); */
+    background: linear-gradient(
+    to right,
+   rgb(207, 63, 207),
+   skyblue,
+   rgb(189, 86, 189)
+  );
+  background-color:#547792;
 }
 h1{
-    color: white;
+    color:purple;
     text-decoration: underline;
 }
  .container{
@@ -65,9 +71,10 @@ h1{
  }
 .leftContainer {
   padding: 20px 20px;
-  border: 2px solid white;
-  background: linear-gradient(to top, rgb(129, 204, 230), rgb(79, 245, 203));
-  box-shadow: 10px 10px 25px white;
+  /* border: 2px solid purple; */
+  /* background: linear-gradient(to top, rgb(129, 204, 230), rgb(79, 245, 203)); */
+  background-color: white;
+  box-shadow: 0px 0px 15px black;
   width: 38vw;
   height: auto;
   display: flex;
@@ -76,28 +83,37 @@ h1{
   flex-direction: column;
   gap: 20px;
 }
+.para{
+  font-size: 18px;
+  color: rgba(255, 0, 0, 0.815);
+  margin-top: 10px;
+}
 .leftContainer input {
   outline: none;
-  border: none;
-  border-radius: 35px;
+  border: 1px solid purple;
+  border-radius: 10px;
   padding-left: 20px;
-  width: 30vw;
+  width: 28vw;
   height: 8vh;
+}
+.leftContainer input:focus{
+  border: 2px solid purple ;
 }
 #submit {
   border: 1px solid white;
   background: linear-gradient(
-    to left,
-    rgb(80, 202, 243),
-    rgb(13, 253, 193)
+    to right,
+   skyblue,
+   rgb(146, 4, 146)
   );
   color:white;
   font-size: 18px;
   cursor: pointer;
-  border-radius: 35px;
-  width: 15vw;
+  border-radius: 20px;
+  width: 20vw;
   height: 50px;
   padding: 10px 10px;
+  outline: none;
 }
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
@@ -112,6 +128,9 @@ h1{
         font-size: 16px;
         width: 120px;
         height: 40px;
+    }
+    .para{
+      font-size: 16px;
     }
     .leftContainer{
         /* height: 60vh; */
