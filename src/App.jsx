@@ -8,14 +8,17 @@ function App() {
     register,
     handleSubmit,
     watch,
+    reset,
     formState: { errors },
   } = useForm();
-  const notify = () => toast("Form Submit");
+
   return (
     <>
       <form
         onSubmit={handleSubmit((data) => {
           console.log(data);
+            toast.success("Form submitted successfully 😎!");
+            reset()
         })}
       >
         <div className="container">
@@ -65,13 +68,11 @@ function App() {
                 </p>
               )}
             </div>
-            <button id="submit" onClick={notify}>
-              Submit
-            </button>
-            <ToastContainer />
+            <button id="submit">Submit</button>
           </div>
         </div>
       </form>
+         <ToastContainer />
     </>
   );
 }
